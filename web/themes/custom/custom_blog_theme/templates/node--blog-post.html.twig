@@ -1,0 +1,79 @@
+{#
+/**
+ * @file
+ * Custom theme implementation to display a blog post node.
+ *
+ * Available variables:
+ * - node: The node entity with limited access to object properties and methods.
+ * - label: The title of the node.
+ * - content: All node items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}.
+ * - url: Direct URL of the current node.
+ * - attributes: HTML attributes for the containing element.
+ * - content_attributes: Same as attributes, except applied to the main
+ *   content tag that appears in the template.
+ *
+ * @see template_preprocess_node()
+ */
+#}
+<article{{ attributes.addClass('blog-post', 'node--type-' ~ node.bundle|clean_class, node.isPromoted() ? 'node--promoted', node.isSticky() ? 'node--sticky', not node.isPublished() ? 'node--unpublished') }}>
+
+  <header class="blog-post__header">
+    {{ title_prefix }}
+    {% if label and not page %}
+      <h2{{ title_attributes.addClass('blog-post__title') }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
+
+    {% if display_submitted %}
+      <div class="blog-post__meta">
+        <span class="blog-post__author">
+          By {{ author_name }}
+        </span>
+        <span class="blog-post__date">
+          {{ date }}
+        </span>
+      </div>
+    {% endif %}
+  </header>
+
+  {# Featured Image #}
+  {% if content.field_featured_image %}
+    <div class="blog-post__featured-image">
+      {{ content.field_featured_image }}
+    </div>
+  {% endif %}
+
+  {# Main Content #}
+  <div{{ content_attributes.addClass('blog-post__content') }}>
+    {{ content.body }}
+  </div>
+
+  {# Author Bio #}
+  {% if content.field_author_bio %}
+    <aside class="blog-post__author-bio">
+      <h3 class="author-bio__title">About the Author</h3>
+      {{ content.field_author_bio }}
+    </aside>
+  {% endif %}
+
+  {# Tags #}
+  {% if content.field_tags %}
+    <footer class="blog-post__footer">
+      <div class="blog-post__tags">
+        <span class="tags__label">Tags:</span>
+        {{ content.field_tags }}
+      </div>
+    </footer>
+  {% endif %}
+
+  {# Additional links like edit, delete #}
+  {% if content.links %}
+    <div class="blog-post__links">
+      {{ content.links }}
+    </div>
+  {% endif %}
+
+</article>

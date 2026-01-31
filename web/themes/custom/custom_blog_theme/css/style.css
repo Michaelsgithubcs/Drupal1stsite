@@ -1,0 +1,139 @@
+/**
+ * Custom Blog Theme Styles
+ */
+
+/* Blog Post Styling */
+.blog-post {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post__header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.blog-post__title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+  color: #2c3e50;
+}
+
+.blog-post__title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-post__title a:hover {
+  color: #3498db;
+}
+
+.blog-post__meta {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  display: flex;
+  gap: 1rem;
+}
+
+.blog-post__author,
+.blog-post__date {
+  display: inline-block;
+}
+
+.blog-post__featured-image {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.blog-post__featured-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.blog-post__content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+.blog-post__author-bio {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-left: 4px solid #3498db;
+  margin: 2rem 0;
+  border-radius: 4px;
+}
+
+.author-bio__title {
+  font-size: 1.3rem;
+  margin: 0 0 0.5rem;
+  color: #2c3e50;
+}
+
+.blog-post__footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Tags Styling */
+.field--tags {
+  margin: 1rem 0;
+}
+
+.field--tags .field__label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.field--tags .field__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.field--tags .tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #3498db;
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.field--tags .tag:hover {
+  background: #2980b9;
+}
+
+.field--tags .tag a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-post__title {
+    font-size: 2rem;
+  }
+
+  .blog-post__content {
+    font-size: 1rem;
+  }
+}

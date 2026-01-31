@@ -1,0 +1,19 @@
+name: 'Custom Blog Theme'
+type: theme
+description: 'A custom theme for the blog with custom Twig templates'
+core_version_requirement: ^10 || ^11
+base theme: stable9
+libraries:
+  - custom_blog_theme/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: Footer

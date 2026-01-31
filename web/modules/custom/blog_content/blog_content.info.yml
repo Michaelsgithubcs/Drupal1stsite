@@ -1,0 +1,5 @@
+name: 'Blog Content'
+type: module
+description: 'Custom module for blog content type with custom fields'
+core_version_requirement: ^10 || ^11
+package: 'Custom'

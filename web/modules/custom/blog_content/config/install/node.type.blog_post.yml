@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Blog Post'
+type: blog_post
+description: 'Use blog posts for time-sensitive content with custom fields like author bio, featured image, and tags.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
