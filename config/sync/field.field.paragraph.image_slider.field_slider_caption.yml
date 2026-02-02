@@ -1,0 +1,22 @@
+uuid: d22da66e-cecd-4ded-b09c-615e20d78a06
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider_caption
+    - paragraphs.paragraphs_type.image_slider
+  module:
+    - text
+id: paragraph.image_slider.field_slider_caption
+field_name: field_slider_caption
+entity_type: paragraph
+bundle: image_slider
+label: Caption
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

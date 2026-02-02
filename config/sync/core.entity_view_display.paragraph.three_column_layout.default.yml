@@ -1,0 +1,38 @@
+uuid: 9bd30e62-ef17-4dd9-901c-d5c02b690875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_column_layout.field_column_1
+    - field.field.paragraph.three_column_layout.field_column_2
+    - field.field.paragraph.three_column_layout.field_column_3
+    - paragraphs.paragraphs_type.three_column_layout
+  module:
+    - text
+id: paragraph.three_column_layout.default
+targetEntityType: paragraph
+bundle: three_column_layout
+mode: default
+content:
+  field_column_1:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_column_2:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_column_3:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

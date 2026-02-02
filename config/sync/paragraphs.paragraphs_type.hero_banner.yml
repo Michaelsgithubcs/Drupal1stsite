@@ -1,0 +1,10 @@
+uuid: c6c1cd89-78d7-437e-a312-390f92264535
+langcode: en
+status: true
+dependencies: {  }
+id: hero_banner
+label: 'Hero Banner'
+icon_uuid: null
+icon_default: null
+description: 'Large banner with image and text overlay'
+behavior_plugins: {  }

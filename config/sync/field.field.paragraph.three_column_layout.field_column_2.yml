@@ -1,0 +1,22 @@
+uuid: a56ae2ed-5b1a-4efb-9b88-7ccdad9a7c18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_2
+    - paragraphs.paragraphs_type.three_column_layout
+  module:
+    - text
+id: paragraph.three_column_layout.field_column_2
+field_name: field_column_2
+entity_type: paragraph
+bundle: three_column_layout
+label: 'Column 2'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

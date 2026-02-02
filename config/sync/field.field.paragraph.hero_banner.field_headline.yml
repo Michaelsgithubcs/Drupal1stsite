@@ -1,0 +1,19 @@
+uuid: 5d10740d-bc53-4404-928d-86161f196e1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline
+    - paragraphs.paragraphs_type.hero_banner
+id: paragraph.hero_banner.field_headline
+field_name: field_headline
+entity_type: paragraph
+bundle: hero_banner
+label: Headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

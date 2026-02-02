@@ -1,0 +1,10 @@
+uuid: 9c50c7e0-99ea-4bbd-b40e-3232af5d1c4a
+langcode: en
+status: true
+dependencies: {  }
+id: text_with_image
+label: 'Text with Image'
+icon_uuid: null
+icon_default: null
+description: 'Text content with image on left or right'
+behavior_plugins: {  }

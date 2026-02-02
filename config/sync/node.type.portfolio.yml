@@ -1,0 +1,11 @@
+uuid: 41925b85-447b-4fd9-8629-5227afbe4995
+langcode: en
+status: true
+dependencies: {  }
+name: 'Portfolio Item'
+type: portfolio
+description: 'Portfolio gallery items showcasing carpentry projects'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true

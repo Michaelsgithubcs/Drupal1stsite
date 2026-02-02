@@ -1,0 +1,52 @@
+uuid: d31fe841-b2a5-406c-9212-62a4781b09e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.portfolio.field_portfolio_images
+    - field.field.node.portfolio.field_project_date
+    - field.field.node.portfolio.field_project_description
+    - node.type.portfolio
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.portfolio.default
+targetEntityType: node
+bundle: portfolio
+mode: default
+content:
+  field_portfolio_images:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_project_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_project_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

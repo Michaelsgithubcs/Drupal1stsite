@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: 7ae90fd1-839e-43e3-8ee6-a83d23efab1c
+name: "Leo's Carpentry & Designs"
+mail: admin@leos-carpentry.local
+slogan: 'Expert Craftsmanship Since 2010'
+page:
+  403: ''
+  404: ''
+  front: /node/23
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

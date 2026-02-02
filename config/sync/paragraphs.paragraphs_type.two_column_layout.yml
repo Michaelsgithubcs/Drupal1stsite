@@ -1,0 +1,10 @@
+uuid: f8823276-bbd7-4e26-b33a-9cfa6edd8e2c
+langcode: en
+status: true
+dependencies: {  }
+id: two_column_layout
+label: 'Two Column Layout'
+icon_uuid: null
+icon_default: null
+description: 'Content split into two columns'
+behavior_plugins: {  }

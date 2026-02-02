@@ -1,0 +1,25 @@
+uuid: 6056663d-239f-4510-b1d8-c135746f40b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.page
+    - node.type.portfolio
+  module:
+    - node
+id: editor
+label: Editor
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'create article content'
+  - 'create page content'
+  - 'create portfolio content'
+  - 'delete own article content'
+  - 'delete own portfolio content'
+  - 'edit own article content'
+  - 'edit own page content'
+  - 'edit own portfolio content'
+  - 'view own unpublished content'

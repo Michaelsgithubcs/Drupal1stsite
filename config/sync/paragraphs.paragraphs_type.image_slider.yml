@@ -1,0 +1,10 @@
+uuid: 5957a55e-b3d7-4dc9-b273-a9a5bfb6559f
+langcode: en
+status: true
+dependencies: {  }
+id: image_slider
+label: 'Image Slider'
+icon_uuid: null
+icon_default: null
+description: 'A carousel/slider with multiple images'
+behavior_plugins: {  }

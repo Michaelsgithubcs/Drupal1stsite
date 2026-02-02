@@ -1,0 +1,38 @@
+uuid: 25037deb-f7cb-406d-9da6-ac0cf4009893
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_image
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - image
+id: paragraph.hero_banner.field_banner_image
+field_name: field_banner_image
+entity_type: paragraph
+bundle: hero_banner
+label: 'Banner Image'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: banners
+  file_extensions: 'png jpg jpeg'
+  max_filesize: '5 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,46 @@
+uuid: 30b87bbb-f68e-44df-9648-c335812689eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.hero_banner
+    - paragraphs.paragraphs_type.image_slider
+    - paragraphs.paragraphs_type.text_with_image
+    - paragraphs.paragraphs_type.three_column_layout
+    - paragraphs.paragraphs_type.two_column_layout
+  module:
+    - entity_reference_revisions
+id: node.page.field_page_paragraphs
+field_name: field_page_paragraphs
+entity_type: node
+bundle: page
+label: 'Page Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      image_slider: image_slider
+      two_column_layout: two_column_layout
+      three_column_layout: three_column_layout
+      hero_banner: hero_banner
+      text_with_image: text_with_image
+    negate: 0
+    target_bundles_drag_drop:
+      hero_banner:
+        enabled: true
+      image_slider:
+        enabled: true
+      text_with_image:
+        enabled: true
+      three_column_layout:
+        enabled: true
+      two_column_layout:
+        enabled: true
+field_type: entity_reference_revisions

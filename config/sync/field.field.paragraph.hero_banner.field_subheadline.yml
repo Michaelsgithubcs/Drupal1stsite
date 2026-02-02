@@ -1,0 +1,22 @@
+uuid: 73f7af02-700a-4e56-882e-d081c4679f63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheadline
+    - paragraphs.paragraphs_type.hero_banner
+  module:
+    - text
+id: paragraph.hero_banner.field_subheadline
+field_name: field_subheadline
+entity_type: paragraph
+bundle: hero_banner
+label: Subheadline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
