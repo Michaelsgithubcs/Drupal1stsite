@@ -1,0 +1,9 @@
+id: node__portfolio
+label: 'Content: Portfolio'
+tags:
+  title: '[node:title] | Portfolio | [site:name]'
+  description: '[node:field_project_description]'
+  keywords: 'portfolio, [node:title], carpentry project'
+  og_type: article
+  og_title: '[node:title]'
+  og_description: '[node:field_project_description]'

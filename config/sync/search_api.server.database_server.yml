@@ -1,0 +1,11 @@
+uuid: f04e35a6-f1e5-40cb-b223-e7cb654978cd
+langcode: en
+status: true
+dependencies: {  }
+id: database_server
+name: 'Database Server'
+description: 'Search server using the database'
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 3

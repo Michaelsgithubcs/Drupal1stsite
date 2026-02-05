@@ -1,0 +1,9 @@
+id: node__article
+label: 'Content: Article'
+tags:
+  title: '[node:title] | Blog | [site:name]'
+  description: '[node:summary]'
+  keywords: 'blog, [node:title], woodworking tips'
+  article_published_time: '[node:created:html_datetime]'
+  article_modified_time: '[node:changed:html_datetime]'
+  og_type: article

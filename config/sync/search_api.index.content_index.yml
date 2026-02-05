@@ -1,0 +1,58 @@
+uuid: e231032d-1a80-43cf-a898-3012f6bff1a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.server.database_server
+  module:
+    - node
+id: content_index
+name: 'Content Index'
+description: 'Search index for site content'
+read_only: false
+field_settings: {  }
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: true
+      selected:
+        - article
+        - page
+        - portfolio
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  html_filter:
+    weights:
+      preprocess_index: -10
+    all_fields: false
+    title: true
+    alt: true
+    tags:
+      b: 2.0
+      em: 1.5
+      h1: 5.0
+      h2: 3.0
+      h3: 2.0
+      strong: 2.0
+      u: 1.5
+  ignorecase:
+    weights:
+      preprocess_index: -20
+    all_fields: false
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  delete_on_fail: true
+  index_directly: true
+  track_changes_in_references: true
+server: database_server

@@ -1,0 +1,17 @@
+id: node.portfolio.default.group_project_details
+group_name: group_project_details
+entity_type: node
+bundle: portfolio
+mode: default
+context: form
+label: 'Project Details'
+parent_name: ''
+weight: 20
+children:
+  - field_project_description
+  - field_project_date
+format_type: details
+format_settings:
+  open: true
+  required_fields: true
+region: content

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: UYGkeE2iH3UGp9lBPsELb3VSgHz9vkMJeaGzcYwE7Uw
+settings:
+  library_url: ''
+  css_url: ''
+  crop_preview_image_style: thumbnail
+  crop_list:
+    '16_9': '16:9'
+    square: '1:1'
+  crop_types_required: {  }
+  warn_multiple_usages: false
+  show_default_crop: true
+  notify_apply: false
+  notify_update: true
